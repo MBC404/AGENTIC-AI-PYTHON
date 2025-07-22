@@ -1,0 +1,398 @@
+
+--- Page 1 ---
+
+ThinkSystem SR550  
+Maintenance Manual
+Machine Types: 7X03 and 7X04
+
+
+--- Page 2 ---
+
+Note
+Before using this information and the product it supports, be sure to read and understand the safety
+information and the safety instructions, which are available at:
+https://pubs.lenovo.com/safety_documentation/
+In addition, be sure that you are familiar with the terms and conditions of the Lenovo warranty for your server,
+which can be found at:
+http://datacentersupport.lenovo.com/warrantylookup
+Nineteenth Edition (January 2025)
+© Copyright Lenovo 2017, 2025.
+LIMITED AND RESTRICTED RIGHTS NOTICE: If data or software is delivered pursuant to a General Services
+Administration (GSA) contract, use, reproduction, or disclosure is subject to restrictions set forth in Contract No. GS-35F-
+05925.
+
+
+--- Page 3 ---
+
+Contents
+Contents . . . . . . . . . . . . . . . . . i
+Safety
+. . . . . . . . . . . . . . . . . . iii
+Safety inspection checklist
+. . . . . . . . . . . iv
+Chapter 1.  Introduction . . . . . . . . . 1
+Specifications
+. . . . . . . . . . . . . . . . 2
+Particulate contamination . . . . . . . . . . 8
+Firmware updates . . . . . . . . . . . . . . . 9
+Tech Tips . . . . . . . . . . . . . . . . .
+13
+Security advisories
+. . . . . . . . . . . . .
+13
+Power on the server . . . . . . . . . . . . .
+13
+Power off the server . . . . . . . . . . . . .
+14
+Chapter 2.  Server components . . . . 15
+Front view . . . . . . . . . . . . . . . . .
+15
+Front I/O assembly
+. . . . . . . . . . . . .
+19
+Rear view . . . . . . . . . . . . . . . . .
+22
+Rear view LEDs . . . . . . . . . . . . . . .
+24
+System board components . . . . . . . . . .
+27
+System board switches and jumpers
+. . . . . .
+29
+System board LEDs . . . . . . . . . . . . .
+30
+Internal cable routing. . . . . . . . . . . . .
+31
+Server models with eight 3.5-inch simple-
+swap drives
+. . . . . . . . . . . . . .
+34
+Server models with eight 3.5-inch hot-swap
+drives . . . . . . . . . . . . . . . . .
+35
+Server models with twelve 3.5-inch hot-swap
+drives . . . . . . . . . . . . . . . . .
+37
+Server models with eight 2.5-inch hot-swap
+drives . . . . . . . . . . . . . . . . .
+41
+Server models with sixteen 2.5-inch hot-swap
+drives . . . . . . . . . . . . . . . . .
+44
+Parts list. . . . . . . . . . . . . . . . . .
+49
+Power cords . . . . . . . . . . . . . .
+52
+Chapter 3.  Hardware replacement
+procedures. . . . . . . . . . . . . . . 53
+Installation Guidelines
+. . . . . . . . . . . .
+53
+Safety inspection checklist. . . . . . . . .
+54
+System reliability guidelines . . . . . . . .
+55
+Working inside the server with the power on . .
+55
+Handling static-sensitive devices . . . . . .
+56
+Top cover replacement . . . . . . . . . . . .
+56
+Remove the top cover
+. . . . . . . . . .
+56
+Install the top cover
+. . . . . . . . . . .
+58
+Air baffle replacement
+. . . . . . . . . . . .
+59
+Remove the air baffle . . . . . . . . . . .
+60
+Install the air baffle . . . . . . . . . . . .
+61
+Security bezel replacement . . . . . . . . . .
+62
+Remove the security bezel . . . . . . . . .
+62
+Install the security bezel . . . . . . . . . .
+63
+Rack latch replacement. . . . . . . . . . . .
+65
+Remove the rack latches
+. . . . . . . . .
+65
+Install the rack latches
+. . . . . . . . . .
+70
+Hot-swap drive replacement . . . . . . . . . .
+74
+Remove a hot-swap drive . . . . . . . . .
+74
+Install a hot-swap drive . . . . . . . . . .
+76
+Simple-swap drive replacement
+. . . . . . . .
+79
+Remove a simple-swap drive . . . . . . . .
+79
+Install a simple-swap drive. . . . . . . . .
+81
+Backplane replacement. . . . . . . . . . . .
+82
+Remove the 3.5-inch-drive backplane . . . .
+82
+Install the 3.5-inch-drive backplane . . . . .
+83
+Remove the 2.5-inch-drive backplane . . . .
+84
+Install the 2.5-inch-drive backplane . . . . .
+85
+Simple-swap-drive backplate assembly
+replacement . . . . . . . . . . . . . . . .
+87
+Remove the 3.5-inch simple-swap-drive
+backplate assembly . . . . . . . . . . .
+87
+Install the 3.5-inch simple-swap-drive
+backplate assembly . . . . . . . . . . .
+88
+Front I/O assembly replacement . . . . . . . .
+89
+Remove the front I/O assembly . . . . . . .
+89
+Install the front I/O assembly . . . . . . . .
+91
+Hot-swap power supply replacement . . . . . .
+93
+Remove a hot-swap power supply. . . . . .
+93
+Install a hot-swap power supply
+. . . . . .
+97
+RAID super capacitor module replacement . . . . 101
+Remove a RAID super capacitor module . . . 102
+Install a RAID super capacitor module . . . . 102
+Riser card replacement . . . . . . . . . . . . 104
+Remove a riser card . . . . . . . . . . . 104
+Install a riser card . . . . . . . . . . . . 107
+PCIe adapter replacement. . . . . . . . . . . 110
+Remove a PCIe adapter . . . . . . . . . . 110
+Install a PCIe adapter . . . . . . . . . . . 113
+Serial port module replacement
+. . . . . . . . 117
+Remove the serial port module . . . . . . . 117
+Install the serial port module . . . . . . . . 118
+System fan replacement
+. . . . . . . . . . . 119
+Remove a system fan. . . . . . . . . . . 120
+Install a system fan. . . . . . . . . . . . 121
+System fan cage replacement . . . . . . . . . 122
+© Copyright Lenovo 2017, 2025
+i
+
+
+--- Page 4 ---
+
+Remove the system fan cage. . . . . . . . 122
+Install the system fan cage. . . . . . . . . 123
+Memory module replacement
+. . . . . . . . . 125
+Remove a memory module
+. . . . . . . . 125
+Memory module installation rules . . . . . . 126
+Install a memory module
+. . . . . . . . . 130
+LOM adapter replacement
+. . . . . . . . . . 132
+Remove the LOM adapter . . . . . . . . . 132
+Install the LOM adapter . . . . . . . . . . 133
+M.2 backplane and M.2 drive replacement . . . . 134
+Remove the M.2 backplane and M.2 drive. . . 134
+Install the M.2 backplane and M.2 drive. . . . 137
+Adjust the retainer on the M.2 backplane . . . 140
+TCM/TPM adapter replacement (for Chinese
+Mainland only) . . . . . . . . . . . . . . . 140
+Remove the TCM/TPM adapter (for Chinese
+Mainland only)
+. . . . . . . . . . . . . 141
+Install the TCM/TPM adapter (for Chinese
+Mainland only)
+. . . . . . . . . . . . . 142
+Processor and heat sink replacement . . . . . . 143
+Remove a processor and heat sink
+. . . . . 144
+Install a processor and heat sink
+. . . . . . 147
+CMOS battery (CR2032) replacement . . . . . . 151
+Remove the CMOS battery (CR2032)
+. . . . 151
+Install the CMOS battery (CR2032)
+. . . . . 153
+System board replacement . . . . . . . . . . 155
+Remove the system board . . . . . . . . . 156
+Install the system board . . . . . . . . . . 157
+Update the machine type and serial
+number . . . . . . . . . . . . . . . . 159
+Enable TPM/TCM . . . . . . . . . . . . 161
+Enable UEFI Secure Boot . . . . . . . . . 164
+Complete the parts replacement . . . . . . . . 164
+Chapter 4.  Problem
+determination . . . . . . . . . . . . . 167
+Event logs . . . . . . . . . . . . . . . . . 167
+General problem determination procedures . . . . 169
+Resolving suspected power problems . . . . 169
+Resolving suspected Ethernet controller
+problems
+. . . . . . . . . . . . . . . 170
+Troubleshooting by symptom
+. . . . . . . . . 170
+Power on and power off problems . . . . . . 171
+Memory problems . . . . . . . . . . . . 172
+Hard disk drive problems . . . . . . . . . 173
+Monitor and video problems . . . . . . . . 175
+Keyboard, mouse, or USB-device
+problems
+. . . . . . . . . . . . . . . 177
+Optional-device problems . . . . . . . . . 178
+Serial-device problems . . . . . . . . . . 179
+Intermittent problems. . . . . . . . . . . 180
+Power problems . . . . . . . . . . . . . 181
+Network problems . . . . . . . . . . . . 181
+Observable problems. . . . . . . . . . . 182
+Software problems. . . . . . . . . . . . 184
+Appendix A.  Getting help and
+technical assistance . . . . . . . . . . 187
+Before you call . . . . . . . . . . . . . . . 187
+Collecting service data . . . . . . . . . . . . 188
+Contacting Support . . . . . . . . . . . . . 189
+Appendix B.  Notices. . . . . . . . . . 191
+Trademarks
+. . . . . . . . . . . . . . . . 192
+Important notes . . . . . . . . . . . . . . . 192
+Telecommunication regulatory statement. . . . . 192
+Electronic emission notices . . . . . . . . . . 193
+Taiwan Region BSMI RoHS declaration. . . . 193
+Taiwan Region import and export contact
+information
+. . . . . . . . . . . . . . . . 193
+Index . . . . . . . . . . . . . . . . . . 195
+ii
+ThinkSystem SR550 Maintenance Manual
+
+
+--- Page 5 ---
+
+Safety
+Before installing this product, read the Safety Information.
+Antes de instalar este produto, leia as Informações de Segurança.
+在安装本产品之前，请仔细阅读 Safety Information （安全信息）。
+Læs sikkerhedsforskrifterne, før du installerer dette produkt.
+Lees voordat u dit product installeert eerst de veiligheidsvoorschriften.
+Ennen kuin asennat tämän tuotteen, lue turvaohjeet kohdasta Safety Information.
+Avant d'installer ce produit, lisez les consignes de sécurité.
+Vor der Installation dieses Produkts die Sicherheitshinweise lesen.
+Prima di installare questo prodotto, leggere le Informazioni sulla Sicurezza.
+Les sikkerhetsinformasjonen (Safety Information) før du installerer dette produktet.
+Antes de instalar este produto, leia as Informações sobre Segurança.
+© Copyright Lenovo 2017, 2025
+iii
+
+
+--- Page 6 ---
+
+Antes de instalar este producto, lea la información de seguridad.
+Läs säkerhetsinformationen innan du installerar den här produkten.
+Safety inspection checklist
+Use the information in this section to identify potentially unsafe conditions with your server. As each machine
+was designed and built, required safety items were installed to protect users and service technicians from
+injury.
+Notes:
+1. The product is not suitable for use at visual display workplaces according to §2 of the Workplace
+Regulations.
+2. The set-up of the server is made in the server room only.
+CAUTION:
+This equipment must be installed or serviced by trained personnel, as defined by the NEC, IEC 62368-
+1 & IEC 60950-1, the standard for Safety of Electronic Equipment within the Field of Audio/Video,
+Information Technology and Communication Technology. Lenovo assumes you are qualified in the
+servicing of equipment and trained in recognizing hazards energy levels in products. Access to the
+equipment is by the use of a tool, lock and key, or other means of security, and is controlled by the
+authority responsible for the location.
+Important: Electrical grounding of the server is required for operator safety and correct system function.
+Proper grounding of the electrical outlet can be verified by a certified electrician.
+Use the following checklist to verify that there are no potentially unsafe conditions:
+1. Make sure that the power is off and the power cord is disconnected.
+2. Check the power cord.
+• Make sure that the third-wire ground connector is in good condition. Use a meter to measure third-
+wire ground continuity for 0.1 ohm or less between the external ground pin and the frame ground.
+• Make sure that the power cord is the correct type.
+To view the power cords that are available for the server:
+a. Go to:
+iv
+ThinkSystem SR550 Maintenance Manual
+
+
+--- Page 7 ---
+
+http://dcsc.lenovo.com/#/
+b. In the Customize a Model pane:
+1) Click Select Options/Parts for a Model.
+2) Enter the machine type and model for your server.
+c. Click the Power tab to see all line cords.
+• Make sure that the insulation is not frayed or worn.
+3. Check for any obvious non-Lenovo alterations. Use good judgment as to the safety of any non-Lenovo
+alterations.
+4. Check inside the server for any obvious unsafe conditions, such as metal filings, contamination, water or
+other liquid, or signs of fire or smoke damage.
+5. Check for worn, frayed, or pinched cables.
+6. Make sure that the power-supply cover fasteners (screws or rivets) have not been removed or tampered
+with.
+© Copyright Lenovo 2017, 2025
+v
+
+
+--- Page 8 ---
+
+vi
+ThinkSystem SR550 Maintenance Manual
+
+
+--- Page 9 ---
+
+Chapter 1. Introduction
+The ThinkSystem™ SR550 is a 2U all-purpose rack server with two processor sockets that combines
+performance, flexibility, expendability, and manageability into a package. The enterprise-quality design
+delivers the flexibility and scalability needed for the varied demands of 2U rack deployments for workloads in
+small-to-medium sized businesses and remote or branch offices. This server can tackle infrastructure,
+collaboration, cold storage, and line-of-business applications, as well as hosting.
+The server comes with a limited warranty. For details about the warranty, see:
+https://support.lenovo.com/us/en/solutions/ht503310
+For details about your specific warranty, see:
+http://datacentersupport.lenovo.com/warrantylookup
+Identifying your server
+When you contact Lenovo for help, the machine type and serial number information helps support
+technicians to identify your server and provide faster service.
+The machine type and serial number are on the ID label on the right rack latch in the front of the server.
+Figure 1. Location of the ID label
+XClarity Controller network access label
+The XClarity® Controller network access label is attached on the top side of the pull-out information tab. After
+you get the server, peel the XClarity Controller network access label away and store it in a safe place.
+© Copyright Lenovo 2017, 2025
+1
+
+
+--- Page 10 ---
+
+Figure 2. Location of the XClarity Controller network access label
+Quick response code
+The system service label, which is on the top cover, provides a quick response (QR) code for mobile access
+to service information. Scan the QR code with a mobile device and a QR code reader application to get quick
+access to the Lenovo Service web site for this server. The Lenovo Service Information Web site provides
+additional information for parts installation and replacement videos, and error codes for server support.
+The following illustration shows the QR code: https://support.lenovo.com/p/servers/sr550
+Figure 3. QR code
+Specifications
+The following information is a summary of the features and specifications of the server. Depending on the
+model, some features might not be available, or some specifications might not apply.
+2
+ThinkSystem SR550 Maintenance Manual
